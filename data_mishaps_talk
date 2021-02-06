@@ -1,0 +1,50 @@
+
+Data Mishaps night
+
+Metrics are easy, counting and denominators are hard: a NSM tale
+
+I interchange using I and we throughout this talk because
+so much of my work was collaborative, mainly with the head of data, but also with other members of our data team.
+
+When I was at DataCamp, I was promoted to be the first product data scientist, and along with that role
+came the responsibility of helping to develop the company's north star metric. We surprised the new head of
+product by coming up
+with the NSM reasonably fast, and got it into a dashboard even faster. When we were ready to announce it, we
+did it with style. I presented at a company all-hands meeting, plus released an accompanying blog post I had written,
+contextualizing our choices
+and explaining what the metric meant for the company.
+
+The NSM was a hit! An entire department of the company completely re-organized itself around the results we found.
+Fundamentally, we had uncovered awesome insights into how users interacted with our content. For more on my thoughts
+on metric design, especially north star metrics, I have a talk I gave at the DC R conference that is on youtube if you're
+interested.
+
+A few months in to having the NSM live, I was tagged on our public data slack channel by our mobile PM.
+He'd been looking at the NSM and was fairly certain that mobile course units were being double counted.
+Here's where my two data mishaps lessons come into play.
+
+Number one: counting is hard, and that can make getting the correct denominator when calculating a metric even harder.
+We did double count mobile units, and while the reason exactly escapes me, it wasn't the first or last time
+that had happened, it was merely the biggest and widest-reaching metric I messed up a denominator on.
+When initially developing the NSM, which my NDA and common sense dictates I must be vague about,
+so forgive me that, we implemented a correction in the code to make sure we were counting the
+correct group of subscribers for one part of the metric's denominator. So we had thought about this, but
+we had missed something. It happens.
+
+In this case of double-counting mobile content units, I very much had. I took responsibility for the error,
+addressed the issue immediately, made sure the proper stakeholders were pre-informed of the error and changes,
+and when we'd fixed it, we did so with another company-wide announcement explaining what the problem had been,
+the change we made, and how that change had affected the metric. Ultimately, double-counting mobile units
+hadn't really changed things much, and it wasn't a fatal error by far.
+
+Lesson number two was harder to swallow, and is what I urge you to remember: I immediately jumped in on that slack
+message from the mobile PM defensive about my work. No, we didn't double count, he was mistaken! I defended when
+I should have instead asked him follow up questions to establish that we were on the same page.
+This was a valuable piece of feedback I got from the head of data, and that's what I've carried forward from
+this data mishap of mine, though you have to admit, the phrase "counting is hard" is pithy and fun to say.
+
+Thank you!
+
+
+w/some ad libs: 2:16
+w/some ad libs after edit: 3:58
